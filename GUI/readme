@@ -1,0 +1,99 @@
+# Song Player Application
+
+This is a song player application developed using the Qt framework. 
+The application utilizes the Jamendo API for song search functionality, 
+allowing users to search for songs, create and manage playlists, and play songs.
+The application showcases proficiency in software development, API integration, and user-centric design.
+
+## Features
+
+- **Song Search**: Search for songs using the Jamendo API.
+- **Playlist Management**: Add, remove, and manage songs in custom playlists.
+- **Song Playback**: Play songs directly from the application.
+- **User Interface**: Seamless integration of C++ backend logic with QML for an intuitive user interface.
+
+## Technologies Used
+
+- **Qt Framework**: Used for developing the application.
+- **QNetworkAccessManager**: Facilitates communication with REST APIs.
+- **Qt JSON**: Used for JSON parsing.
+- **QAbstractListModel**: Custom playlist management system.
+- **QML**: Used for creating a user-friendly interface.
+- **Jamendo API**: Free-to-use API for song search functionality.
+
+## Installation
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/song-player-application.git
+    cd song-player-application
+    ```
+
+2. **Install Qt**: Download and install the latest version of Qt from [the official Qt website](https://www.qt.io/download).
+
+3. **Set up Jamendo API**: Register on [Jamendo Developers](https://devportal.jamendo.com/) and obtain an API key.
+
+4. **Configure API Key**: Add your Jamendo API key to the application's configuration file or source code where API requests are made.
+
+5. **Build and Run the Application**:
+    ```bash
+    mkdir build
+    cd build
+    qmake ..
+    make
+    ./song-player-application
+    ```
+
+## Usage
+
+1. **Search for Songs**: Use the search bar to find songs using the Jamendo API.
+2. **Manage Playlists**: Add songs to your playlist, remove songs, and manage your playlists dynamically.
+3. **Play Songs**: Select a song from your playlist to play it.
+
+## Code Overview
+
+### REST API Communication
+
+The application uses `QNetworkAccessManager` for handling HTTP requests and responses. This allows for seamless integration with the Jamendo API to fetch song data.
+
+### JSON Parsing
+
+JSON data returned from the Jamendo API is parsed using Qt's JSON utility classes (`QJsonDocument`, `QJsonObject`, `QJsonArray`).
+
+### Playlist Management
+
+A custom playlist management system is implemented using `QAbstractListModel`, allowing dynamic addition, removal, and management of songs in the playlist.
+
+### User Interface
+
+The user interface is built using QML, providing an intuitive and interactive user experience. The C++ backend logic is seamlessly integrated with QML, allowing for efficient data handling and UI updates.
+
+## Contribution
+
+1. **Fork the repository**.
+2. **Create a new branch**:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. **Commit your changes**:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. **Push to the branch**:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+5. **Create a pull request**.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Qt Framework](https://www.qt.io/)
+- [Jamendo API](https://devportal.jamendo.com/)
+
+---
+
+Feel free to customize this README file further to better fit your specific needs and details.
